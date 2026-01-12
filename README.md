@@ -205,4 +205,4 @@ Having trouble with LaTeX? Need help with specific programs?
 
 ## 🏷️ Tags
 
-`LaTeX` `VTU` `BCSL456D` `Technical-Writing` `Academic-Documents` `Lab-Programs` `Overleaf` `TeXstudio` `Mathematical-Typesetting` `Scientific-Writing` `Document-Preparation` `Bibliography` `TikZ` `Algorithms` `University-Lab`
+`LaTeX` `VTU` `BCSL456D` `Technical-Writing` `Academic-Documents` `Lab-Programs` `Overleaf` `TeXstudio` `Mathematical-Typesetting` `Scientific-Writing` `Document-Preparation` `Bibliography` `TikZ` `Algorithms` `University-Lab` `VCET`
