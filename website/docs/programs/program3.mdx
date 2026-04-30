@@ -1,0 +1,79 @@
+---
+title: Program 3
+sidebar_label: 3. Project Title Page
+---
+
+# VTU Project Title Page
+
+This program demonstrates how to design a professional project title page as per VTU standards, including image placement and text formatting.
+
+## Source Code
+
+```latex
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{setspace}
+\usepackage{mfirstuc}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+\begin{document}
+	\begin{titlepage}
+		\centering{\textcolor{red}{\textbf{\capitalisewords{visvesvaraya technological University}}}}\\
+		\centering{\scshape\capitalisewords{jnana sangama belagavi-590018-karnataka,india}}
+		\vspace{0.5cm}
+		\begin{figure}[htbp]
+					\centering\includegraphics[width=0.2\textwidth]{vtu.jpeg}\par
+		\end{figure}
+		
+			\centering	\textsc{\scshape{Project Report On}}\\
+			\centering	\textbf{Technical Writing Using Latex}\\
+			submitted in the fulfillment of the requirements for the award of\\
+			\vspace{0.1cm}
+			\centering\textsc{Bachelor of Engineering }\\in\\\centering\textsc{Computer Science and Engineering} \\
+			\vspace*{0.1cm}
+			\centering{Submitted By}\\
+			\vspace{1cm}
+			
+			\begin{minipage}[t]{0.45\textwidth}
+					\begin{tabular}[t]{@{}l}
+					\textbf{Name}\\
+					N1\\
+					N2\\
+					N3\\
+					N4
+				\end{tabular}
+		\end{minipage}
+			\hfill
+			\begin{tabular}[t]{r@{}}
+				\textbf{USN}\\
+				U1\\
+				U2\\
+				U3\\
+				U4
+			\end{tabular}
+			\vspace{2cm}
+			\begin{center}
+				Under the Guidance of\\Guide Name\\Designation\\
+			\end{center}
+		\centering\includegraphics[width=0.2\textwidth]{vcet_logo.png}\par
+\noindent\hrule
+\begin{center}
+	\textcolor{blue}{\textsc{Department of computer science and Engineering}}\\
+		\textcolor{red}{\textsc{vivekananda college of engineering and technology}}\\
+		\capitalisewords{[a unit of vivekananda vidyavardhaka sangha puttur]}
+		\scshape{Affiliated to visvesvaraya technological university and approved by AICTE-new delhi}
+		Nehru-Nagara puttur-574203\\
+		June 2025
+\end{center}
+	\end{titlepage}
+\end{document}
+```
+
+## Output Preview
+
+<iframe
+  src="/latex-lab-manuals/pdfs/Third.pdf"
+  width="100%"
+  height="600px"
+></iframe>

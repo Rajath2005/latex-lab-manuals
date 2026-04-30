@@ -1,0 +1,60 @@
+---
+title: Program 4
+sidebar_label: 4. Certificate Page
+---
+
+# Certificate Page Design
+
+This program shows how to create a certificate page with justified text and signature fields.
+
+## Source Code
+
+```latex
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{setspace}
+\usepackage{mfirstuc}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\textcolor{red}{\textsc{vivekananda college of Engineering and Technology}}\\
+		\capitalisewords{[a Unit of Vivekananda vidhyavardhaka sangha] \\
+			Nehru Nagara puttur-574243,karnataka,India}	
+		\end{center}
+		\centering\textcolor{red}{\textsc{Department of computer science and Engineering}}\vspace{1cm}
+	
+			\centering\includegraphics[width=0.2\textwidth]{vcet_logo.png}\par\vspace{1cm}
+			\huge{\scshape{Certificate}}\\
+		\vspace{1cm}
+		\normalsize
+			\justifying
+			Certified that the seminar work entitled \underline{\hspace{3cm}} is a bonafide work carried out by \underline{\hspace{3cm}} bearing USN \underline{\hspace{3cm}} in partial fulfillment of the award of the Bachelor of Engineering of the \textcolor{red}{Visvesvaraya Technological University, Belagavi} during the year \underline{\hspace{2cm}}. It is certified that all the corrections/suggestions indicated for the internal assessment have been approved as it satisfies the academic requirements in respect of the technical seminar (BCSL456D) prescribed for the said degree.
+			
+		\vfill\noindent
+	\begin{tabular}[t]{@{}ll}
+		\underline{\hspace{3cm}}\\
+		Guide
+	\end{tabular}
+	\hfill
+		\begin{tabular}[t]{r@{}}
+		\underline{\hspace{4cm}}\\
+		Asst.Professor \& HOD\\
+		Dept of Computer Science and Engineering \\
+		Vivekananda college of Eng \& Technology\\
+		Nehru-Nagar-Puttur-574243\\
+		
+	\end{tabular}
+	\end{titlepage}
+\end{document}
+```
+
+## Output Preview
+
+<iframe
+  src="/latex-lab-manuals/pdfs/Fourth.pdf"
+  width="100%"
+  height="600px"
+></iframe>
