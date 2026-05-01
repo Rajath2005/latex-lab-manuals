@@ -20,10 +20,10 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://Rajath2005.github.io',
+  url: 'https://latex-lab-manuals.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/latex-lab-manuals/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -98,7 +98,7 @@ const config = {
             items: [
               {
                 label: 'Lab Programs',
-                to: '/docs/intro',
+                to: '/docs/programs/program1',
               },
             ],
           },
