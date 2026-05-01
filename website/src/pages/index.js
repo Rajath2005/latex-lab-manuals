@@ -2,8 +2,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import Heading from '@theme/Heading';
-
+import Heading from '@theme/Heading';import Head from '@docusaurus/Head';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -32,8 +31,9 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Documentation for VTU LaTeX Lab Experiments (BCSL456D)">
-      <HomepageHeader />
+      description="Documentation for VTU LaTeX Lab Experiments (BCSL456D)">      <Head>
+        <meta name="google-site-verification" content="eWwpOvW5PQD9Ce9UgELCT6THC3sabhITjJsK21nMbH0" />
+      </Head>      <HomepageHeader />
       <main>
         <section className={styles.features}>
           <div className="container">
