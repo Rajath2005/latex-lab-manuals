@@ -1,0 +1,47 @@
+---
+title: Program 10
+sidebar_label: 10. TikZ Tree Diagram
+---
+
+# Tree Diagram using TikZ
+
+This program shows how to create a hierarchical tree diagram using the `tikz` package.
+
+## Source Code
+
+```latex
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+	\begin{figure}
+		\centering
+		\begin{tikzpicture}
+			[
+			level 1/.style={sibling distance=4cm},
+			level 2/.style={sibling distance=2cm},
+			level 3/.style={sibling distance=3cm},
+			]
+			\node{Root}
+			child{node{A}
+			child {node{A1}}
+			child {node{A2}}
+			}
+			child{node{B}
+				child {node{B1}}
+				child {node{B2}}
+			};
+			
+		\end{tikzpicture}
+		\caption{A Sample Tree diagram}
+		\label{Fig:Image}
+	\end{figure}
+\end{document}
+```
+
+## Output Preview
+
+<iframe
+  src="/latex-lab-manuals/pdfs/Tenth.pdf"
+  width="100%"
+  height="600px"
+></iframe>

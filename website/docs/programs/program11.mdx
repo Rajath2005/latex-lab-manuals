@@ -1,0 +1,32 @@
+---
+title: Program 11
+sidebar_label: 11. Algorithm Formatting
+---
+
+# Algorithm Formatting
+
+This program demonstrates how to format algorithms with line numbers and rules using the `algorithm2e` package.
+
+## Source Code
+
+```latex
+\documentclass{article}
+\usepackage[ruled,linesnumbered]{algorithm2e}
+\begin{document}
+	\begin{algorithm}
+		\caption{Euclid's Algorithm}
+		\label{Euclid}
+		\KwData{Input two integers $a$ and $b$}
+		\KwResult{GCD of $a$ and $b$}
+		\eIf{$b$=0}{return $a$}{return GCD ($b$,$a$ $mod$ $b$)}
+	\end{algorithm}
+\end{document}
+```
+
+## Output Preview
+
+<iframe
+  src="/latex-lab-manuals/pdfs/Eleventh.pdf"
+  width="100%"
+  height="600px"
+></iframe>

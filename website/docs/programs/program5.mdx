@@ -1,0 +1,48 @@
+---
+title: Program 5
+sidebar_label: 5. Student Marks Table
+---
+
+# Student Marks Table
+
+This program demonstrates how to create complex tables in LaTeX using the `multirow` and `multicolumn` commands.
+
+## Source Code
+
+```latex
+\documentclass{article}
+\usepackage{multirow}
+\begin{document}
+	\begin{table}[h]
+			\begin{tabular}{|c|c|c|ccc|}
+				\hline
+				\multirow{2}{*}{S.NO} & \multirow{2}{*}{USN} &\multirow{2}{*}{Student Name} &\multicolumn{3}{c|}{Marks}\\
+				\cline{4-6}
+				&			& 			&
+				\multicolumn{1}{c|}{Subject1} & \multicolumn{1}{c|}{Subject2} & 
+				Subject3\\
+				\hline
+				1 & 4VP23CSXYZ & Student 1 & \multicolumn{1}{c|}{80} &
+				\multicolumn{1}{c|}{90} &
+				70\\
+				\hline
+					2 & 4VP23CSXYZ & Student 2 & \multicolumn{1}{c|}{80} &
+				\multicolumn{1}{c|}{70} &
+				90\\
+				\hline
+					3 & 4VP23CSXYZ & Student 3 & \multicolumn{1}{c|}{60} &
+				\multicolumn{1}{c|}{75} &
+				70\\
+				\hline
+	 		\end{tabular}
+	\end{table}
+\end{document}
+```
+
+## Output Preview
+
+<iframe
+  src="/latex-lab-manuals/pdfs/Fifth.pdf"
+  width="100%"
+  height="600px"
+></iframe>

@@ -1,0 +1,40 @@
+---
+title: Program 7
+sidebar_label: 7. Math Equations
+---
+
+# Mathematical Equations
+
+This program demonstrates how to typeset complex mathematical equations and alignments using the `amsmath` package.
+
+## Source Code
+
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+	\begin{minipage}{0.5\textwidth}
+		\begin{align*}
+			&x=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}\\
+			&=\frac{-2\pm\sqrt{2^2-4*(1)*1(-8)}}{2*1}\\
+			&=\frac{-2\pm\sqrt{4+32}}{2}
+		\end{align*}
+	\end{minipage}
+	\hfill
+   \begin{minipage}{0.5\textwidth}
+     \begin{align*}
+		 \varphi_\sigma^{\lambda}A_t &=\sum_{\pi\epsilon c_{t}}  \operatorname{sgn}(\pi)\varphi_\sigma^{\lambda}\varphi_\pi^{\lambda}\\
+		 &= \sum_{\tau\epsilon C_{\sigma t}} \operatorname{sgn}(\sigma^{-1}\tau\sigma)\varphi_\sigma^{\lambda}\varphi_{\sigma^{-1}{\sigma}}^{\lambda}\\
+		 &=\operatorname{A}_\sigma\operatorname{t}\varphi_\sigma^{\lambda}
+	 \end{align*}
+  \end{minipage}
+\end{document}
+```
+
+## Output Preview
+
+<iframe
+  src="/latex-lab-manuals/pdfs/Seventh.pdf"
+  width="100%"
+  height="600px"
+></iframe>

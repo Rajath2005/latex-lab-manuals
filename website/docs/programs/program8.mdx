@@ -1,0 +1,54 @@
+---
+title: Program 8
+sidebar_label: 8. Theorems & Definitions
+---
+
+# Theorems & Definitions
+
+This program shows how to define and use theorem-like environments (Theorems, Definitions, Corollaries, Lemmas) in LaTeX.
+
+## Source Code
+
+```latex
+\documentclass{article}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{lemma}{Lemma}[section]
+\begin{document}
+	\section{One}
+	\begin{theorem}
+		A function whose derivatives exist in every point is a continuous function.
+	\end{theorem}
+	\begin{definition}
+		Motion is the change of the Position of an Object With respect to the time.
+	\end{definition}
+	\begin{corollary}
+		This is the Corollary 
+	\end{corollary}
+	\begin{lemma}
+		This is the Lemma
+	\end{lemma}
+	\section{Second}
+	\begin{theorem}
+		This is the Second theorem.
+	\end{theorem}
+	\begin{definition}
+		This is the Second Definition.
+	\end{definition}
+	\begin{corollary}
+		This is the Second Corollary.
+	\end{corollary}
+	\begin{lemma}
+		This is the Seconf Lemma.
+	\end{lemma}
+\end{document}
+```
+
+## Output Preview
+
+<iframe
+  src="/latex-lab-manuals/pdfs/Eight.pdf"
+  width="100%"
+  height="600px"
+></iframe>

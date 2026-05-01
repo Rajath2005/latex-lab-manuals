@@ -1,0 +1,53 @@
+---
+title: Program 9
+sidebar_label: 9. Bibliography & Citations
+---
+
+# Bibliography & Citations
+
+This program demonstrates how to manage references and citations using BibTeX and the `cite` package.
+
+## Source Code
+
+```latex
+\documentclass{article}
+\usepackage{cite}
+\title{Sample Text with Citations}
+\author{Rajath Kiran A}
+\date{June 2025}
+\begin{document}
+	\maketitle
+	
+	\section{Introduction}
+	LaTeX is a tool for creating documents in a professional way \cite{useintroduction}.\\
+	LaTeX commands are used to express desired results with proper styling \cite{kopka2003guide}.\\~\\
+	More foundational systems like TeX also influence LaTeX \cite{lamport1994latex}.\\
+	
+	\section{References Section}
+	This subsection starts with a few references:
+	
+	\begin{enumerate}
+		\item Reference 1 \hspace{3cm} \cite{oetiker2005not}
+		\item Reference 2 \hspace{3cm} \cite{goossens1993latex}
+		\item Reference 3 \hspace{3cm} \cite{berry2001introduction}
+		\item Reference 4 \hspace{3cm} \cite{wikibookslatex}
+		\item Reference 5 \hspace{3cm} \cite{gratzer2007moremath}
+		\item Reference 6 \hspace{3cm} \cite{kopka2003guide}
+		\item Reference 7 \hspace{3cm} \cite{mittelbach2004latex}
+		\item Reference 8 \hspace{3cm} \cite{knuth1984texbook}
+		\item Reference 9 \hspace{3cm} \cite{lamport1994latex}
+		\item Reference 10 \hspace{3cm} \cite{useintroduction}
+	\end{enumerate}
+	
+	\bibliographystyle{abbrv}
+	\bibliography{P9}
+\end{document}
+```
+
+## Output Preview
+
+<iframe
+  src="/latex-lab-manuals/pdfs/Ninth.pdf"
+  width="100%"
+  height="600px"
+></iframe>

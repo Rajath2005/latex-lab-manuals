@@ -1,0 +1,78 @@
+---
+title: Program 12b
+sidebar_label: 12b. Report Format
+---
+
+# Report Format Design
+
+This program demonstrates a full report layout with a table of contents, list of figures, list of tables, and chapters.
+
+## Source Code
+
+```latex
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{lipsum}
+\title{Title of the Document}
+\author{Rajath Kiran A}
+\date{June 2025}
+\begin{document}
+	\maketitle
+	\tableofcontents
+	
+	\listoffigures
+	\addcontentsline{toc}{chapter}{List of Figures}
+	
+	\listoftables
+	\addcontentsline{toc}{chapter}{List of Tables}
+	
+	\chapter{Introduction}
+	This is the Introduction part of the document where we give a brief overview of the topic.\cite{berry2001introduction} \\
+	It explains the background and the motivation behind choosing this subject.
+	
+	\chapter{Literature}
+	This chapter presents a brief overview of previous works and research done in the same field. \\
+	It helps us understand what has already been explored and where the knowledge gaps lie.
+	
+	\chapter{Methodology}
+	This chapter explains the methods and tools used to conduct the study or analysis. \\
+	It includes any experimental setup, algorithm, or process followed during implementation.
+	\begin{figure}[h]
+		\centering\includegraphics[width=0.5\textwidth]{vcet_logo.png}
+		\caption{Logo of the College}
+		\label{Fig:Image}
+	\end{figure}
+	
+	\chapter{Result}
+	This chapter provides the outcome of the applied methodology, supported with tables or graphs. \\
+	It gives insights into the effectiveness or accuracy of the approach.
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			Column 1 & Column 2 \\
+			\hline
+			Value 1 & Value 2 \\
+			\hline
+		\end{tabular}
+		\caption{Sample Result Table}
+	\end{table}
+	
+	\chapter{Conclusion}
+	This is the conclusion part where we summarize the findings and observations of the project.\cite{berry2001introduction} \\
+	It also mentions possible future improvements or applications of the study.
+	
+	\bibliographystyle{plain}
+	\bibliography{P9}
+	\addcontentsline{toc}{chapter}{Bibliography}
+\end{document}
+```
+
+## Output Preview
+
+<iframe
+  src="/latex-lab-manuals/pdfs/Twevelthb.pdf"
+  width="100%"
+  height="600px"
+></iframe>
